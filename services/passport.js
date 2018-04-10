@@ -33,18 +33,18 @@ passport.use(
         console.log('User exists. Moving along...');
       }
 
-      if (!existingUser) {
-        console.log(profile.id);
-        console.log(profile.emails);
-        return done(false, existingUser);
-      }
+      // if (!existingUser) {
+      //   console.log(profile.id);
+      //   console.log(profile.emails);
+      //   return done(false, existingUser);
+      // }
 
-      // const user = await new User({
-      //   googleId: profile.id,
-      //   email: profile.emails
-      // }).save();
-      // done(null, user);
-      // console.log('User created. Moving along...');
+      const user = await new User({
+        googleId: profile.id,
+        email: profile.emails
+      }).save();
+      done(null, user);
+      console.log('User created. Moving along...');
     }
   )
 );
