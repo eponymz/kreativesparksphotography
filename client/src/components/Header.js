@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import '../css/Header.css';
 import '../css/GoogleBtn.css';
 import '../index.css';
+import kslogo from '../ks-logo.png';
 
 class Header extends Component {
   renderContent() {
@@ -41,7 +42,8 @@ class Header extends Component {
       <div id="header">
         <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
           <div>
-            <Link to="/" className="no-underline navbar-title">
+            <Link to="/" className="no-underline navbar-title navbar-brand">
+              <img style={{ paddingRight: '5px' }} src={kslogo} />
               Kreative Sparks Photography
             </Link>
             <Link to="/gallery" className="no-underline navbar-button">
