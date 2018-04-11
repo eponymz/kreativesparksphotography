@@ -21,3 +21,7 @@ yarn-debug.log*
 yarn-error.log*
 
 Template.js
+CollapseBtn.js
+CollapseDash.js
+CollapseUtils.js
+Login.js

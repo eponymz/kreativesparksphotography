@@ -1,73 +1,63 @@
 import React, { Component } from 'react';
-import { Redirect } from 'react-router-dom';
-import { connect } from 'react-redux';
+//import { Redirect } from 'react-router-dom';
+//import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
-import triage from '../triage.svg';
-import logout from '../logout.svg';
+// import logout from '../logout.svg';
 import '../css/Header.css';
 import '../css/GoogleBtn.css';
+import '../index.css';
 
 class Header extends Component {
   renderContent() {
-    switch (this.props.auth) {
-      case null:
-        return;
-      case false:
-        return <Redirect to="/" />;
-      default:
-        return (
+    // switch (this.props.auth) {
+    //   case null:
+    //     return;
+    //   case false:
+    //     return (
+    //       <div>
+    //         <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+    //           <div>
+    //             <Link to="/home" className="no-underline navbar-title">
+    //               Kreative Sparks Photography
+    //             </Link>
+    //             <Link to="/gallery" className="no-underline navbar-button">
+    //               Gallery
+    //             </Link>
+    //             {/* <Link to="/about" className="no-underline navbar-button">
+    //               About Us
+    //             </Link> */}
+    //             <Link to="/contact" className="no-underline navbar-button">
+    //               Contact Us!
+    //             </Link>
+    //             <a className="right component-title" href="/auth/google">
+    //               L O G - I N
+    //             </a>
+    //           </div>
+    //         </nav>
+    //       </div>
+    //     );
+    //   default:
+    return (
+      <div id="header">
+        <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
           <div>
-            <header className="Header navbar-header">
-              <div className="image-header">
-                <img src={triage} className="Header-logo" alt="logo" />
-                <Link
-                  to={this.props.auth ? '/z/dashboard' : '/'}
-                  className="no-underline navbar-title"
-                >
-                  T R I A G E
-                </Link>
-                <Link
-                  to={this.props.auth ? '/z/pre-release' : '/'}
-                  className="no-underline navbar-button"
-                >
-                  Pre Release
-                </Link>
-                <Link
-                  to={this.props.auth ? '/z/dockin-it' : '/'}
-                  className="no-underline navbar-button"
-                >
-                  Dockerz
-                </Link>
-                <Link
-                  to={this.props.auth ? '/z/utilities' : '/'}
-                  className="no-underline navbar-button dropdown-toggle"
-                >
-                  Utilities
-                </Link>
-
-                {/* <Link
-                  to={this.props.auth ? '/z/post-release-report' : '/'}
-                  className="no-underline navbar-button"
-                >
-                  Post Release Report
+            <Link to="/" className="no-underline navbar-title">
+              Kreative Sparks Photography
+            </Link>
+            <Link to="/gallery" className="no-underline navbar-button">
+              Gallery
+            </Link>
+            {/* <Link to="/about" className="no-underline navbar-button">
+                  About Us
                 </Link> */}
-                {/* <Link
-                  to={this.props.auth ? '/z/hipchat' : '/'}
-                  className="no-underline navbar-button"
-                >
-                  HipChizzat
-                </Link> */}
-                <a className="right component-title" href="/api/logout">
-                  <div className="logout-icon">
-                    <img src={logout} className="logout-icon" alt="logo" />
-                  </div>
-                  L O G O U T
-                </a>
-              </div>
-            </header>
+            <Link to="/contact" className="no-underline navbar-button">
+              Contact Us!
+            </Link>
           </div>
-        );
-    }
+        </nav>
+      </div>
+    );
+    //}
   }
 
   render() {
@@ -75,8 +65,10 @@ class Header extends Component {
   }
 }
 
-function mapStateToProps({ auth }) {
-  return { auth };
-}
+// function mapStateToProps({ auth }) {
+//   return { auth };
+// }
 
-export default connect(mapStateToProps)(Header);
+// connect(mapStateToProps)()
+
+export default Header;

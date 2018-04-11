@@ -1,6 +1,6 @@
 {
-  "short_name": "Triage",
-  "name": "Triage One Stop Shop",
+  "short_name": "KSPhotography",
+  "name": "Kreative Sparks Photography",
   "icons": [
     {
       "src": "favicon.ico",
@@ -11,5 +11,6 @@
   "start_url": "./index.html",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "author": "Ian Sabey / Logo Design By: Jakob Hernandez"
 }

@@ -24,7 +24,7 @@
 }
 
 .body {
-  height: calc(100% - 50px);
+  min-height: 100%;
 }
 
 .content {
@@ -38,7 +38,8 @@
 .content-title {
   font-family: 'Monda', sans-serif;
   font-size: 20px;
-  color: gray;
+  color: lightgray;
+  margin-right: 10px;
 }
 
 .relic-button {
@@ -48,15 +49,16 @@
   transition-duration: 0.5s;
   margin: 15px;
   padding: 10px;
-  background-color: gray;
+  background-color: lightgray;
   border: 2px solid black;
   border-radius: 10px;
 }
 
 .relic-button:hover {
-  color: gray;
+  color: lightgray;
   background-color: black;
-  border: 2px solid gray;
+  border: 2px solid lightgray;
+  text-decoration: none;
 }
 
 .relic-button-collapse {
@@ -66,13 +68,14 @@
   transition-duration: 0.5s;
   margin: 10px;
   padding: 5px;
-  background-color: gray;
+  background-color: lightgray;
   border: 2px solid black;
   border-radius: 10px;
 }
 
 .relic-button-collapse:hover {
-  color: gray;
+  color: lightgray;
   background-color: black;
-  border: 2px solid gray;
+  border: 2px solid lightgray;
+  text-decoration: none;
 }
