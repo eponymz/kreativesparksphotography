@@ -1,8 +1,9 @@
 html,
 body {
+  min-width: 450px;
+  overflow-x: hidden !important;
   margin: 0;
   padding: 0;
-  height: 100%;
   font-family: sans-serif;
   background: #333;
 }

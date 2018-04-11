@@ -43,7 +43,7 @@ class Header extends Component {
         <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
           <div>
             <Link to="/" className="no-underline navbar-title navbar-brand">
-              <img style={{ paddingRight: '5px' }} src={kslogo} />
+              <img style={{ paddingRight: '5px' }} alt="logo" src={kslogo} />
               Kreative Sparks Photography
             </Link>
             <Link to="/gallery" className="no-underline navbar-button">

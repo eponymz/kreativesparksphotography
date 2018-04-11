@@ -23,9 +23,7 @@ class AboutUs extends Component {
         <br />
         <div
           style={{
-            textAlign: 'center',
-            marginLeft: '100px',
-            marginRight: '100px'
+            textAlign: 'center'
           }}
         >
           <p>
