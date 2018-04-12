@@ -3,8 +3,6 @@ import React, { Component } from 'react';
 //import { connect } from 'react-redux';
 import { Link } from 'react-router-dom';
 // import logout from '../logout.svg';
-import '../css/Header.css';
-import '../css/GoogleBtn.css';
 import '../index.css';
 import kslogo from '../ks-logo.png';
 
@@ -40,19 +38,33 @@ class Header extends Component {
     //   default:
     return (
       <div id="header">
-        <nav className="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+        <nav className="navbar pb-0 pt-0 pr-0 pl-2 sticky-top navbar-dark bg-dark border-bottom border-light">
           <div>
-            <Link to="/" className="no-underline navbar-title navbar-brand">
+            <Link
+              to="/"
+              className="navbar-brand"
+              style={{
+                fontFamily: "'Orbitron', sans-serif"
+              }}
+            >
               <img style={{ paddingRight: '5px' }} alt="logo" src={kslogo} />
               Kreative Sparks Photography
             </Link>
-            <Link to="/gallery" className="no-underline navbar-button">
+            <Link
+              to="/gallery"
+              className="btn font-weight-bold btn-outline-light border-dark"
+              style={{ fontFamily: "'Orbitron', sans-serif" }}
+            >
               Gallery
             </Link>
             {/* <Link to="/about" className="no-underline navbar-button">
                   About Us
                 </Link> */}
-            <Link to="/contact" className="no-underline navbar-button">
+            <Link
+              to="/contact"
+              className="btn font-weight-bold btn-outline-light border-dark"
+              style={{ fontFamily: "'Orbitron', sans-serif" }}
+            >
               Contact Us!
             </Link>
           </div>

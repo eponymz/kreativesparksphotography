@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 // import { Redirect } from 'react-router-dom';
 // import { connect } from 'react-redux';
-import '../css/Footer.css';
 import '../index.css';
 
 class Footer extends Component {
@@ -13,9 +12,21 @@ class Footer extends Component {
     //     return <Redirect to="/" />;
     //   default:
     return (
-      <div id="footer">
+      <div id="footer sticky-bottom">
         <footer>
-          <div className="footer-component">©2018 | Ian Sabey</div>
+          <div
+            className="pb-2 pt-2"
+            style={{
+              fontFamily: "'Orbitron', sans-serif",
+              fontSize: '8px',
+              color: 'rgb(146,146,146)',
+              textAlign: 'center'
+            }}
+          >
+            ©2018 | Kreative Sparks Photography - All rights reserved to content
+            <br />
+            ©2018 | Ian Sabey - Web design
+          </div>
         </footer>
       </div>
     );

@@ -3,27 +3,27 @@ import React, { Component } from 'react';
 // import { connect } from 'react-redux';
 //import { Link } from 'react-router-dom';
 // import Center from 'react-center';
-import '../css/Header.css';
-import '../css/Prerelease.css';
 import '../index.css';
 
 class AboutUs extends Component {
   renderContent() {
     return (
-      <div className="content-title body" id="body">
+      <div className="p-2" id="body">
         <h1
           style={{
             textAlign: 'center',
             textDecoration: 'underline',
-            paddingTop: '35px'
+            color: 'lightgray',
+            fontFamily: "'Monda', sans-serif"
           }}
         >
           About Us
         </h1>
-        <br />
         <div
           style={{
-            textAlign: 'center'
+            textAlign: 'center',
+            color: 'lightgray',
+            fontFamily: "'Monda', sans-serif"
           }}
         >
           <p>
@@ -77,6 +77,51 @@ class AboutUs extends Component {
             Maecenas a erat vitae massa dapibus cursus nec at felis. Maecenas
             quis ornare felis. Etiam ultricies ante sit amet ipsum dapibus, ac
             mollis arcu luctus.
+          </p>
+          <p>
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Curabitur a dictum leo. Etiam lobortis est
+            lacus, luctus blandit nunc posuere non. Quisque dignissim varius
+            ultricies. Pellentesque auctor auctor leo. Aliquam id augue non
+            mauris ullamcorper ultrices. Vestibulum vestibulum, magna nec
+            tincidunt vulputate, ex lectus vehicula quam, non sagittis urna
+            libero sit amet quam. Ut consequat, leo ut iaculis feugiat, urna mi
+            mollis magna, sit amet varius dui massa sed metus. Nulla sit amet
+            sem est. Quisque a ante risus. Quisque pulvinar, mauris in lobortis
+            egestas, lacus justo egestas nisi, quis egestas ipsum elit sed
+            lacus. Aliquam eget venenatis mi, id dignissim justo. Nullam mi dui,
+            pulvinar quis dictum sed, lobortis a justo. Morbi sed nulla vitae
+            urna malesuada malesuada.
+          </p>
+          <p>
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Curabitur a dictum leo. Etiam lobortis est
+            lacus, luctus blandit nunc posuere non. Quisque dignissim varius
+            ultricies. Pellentesque auctor auctor leo. Aliquam id augue non
+            mauris ullamcorper ultrices. Vestibulum vestibulum, magna nec
+            tincidunt vulputate, ex lectus vehicula quam, non sagittis urna
+            libero sit amet quam. Ut consequat, leo ut iaculis feugiat, urna mi
+            mollis magna, sit amet varius dui massa sed metus. Nulla sit amet
+            sem est. Quisque a ante risus. Quisque pulvinar, mauris in lobortis
+            egestas, lacus justo egestas nisi, quis egestas ipsum elit sed
+            lacus. Aliquam eget venenatis mi, id dignissim justo. Nullam mi dui,
+            pulvinar quis dictum sed, lobortis a justo. Morbi sed nulla vitae
+            urna malesuada malesuada.
+          </p>
+          <p>
+            Orci varius natoque penatibus et magnis dis parturient montes,
+            nascetur ridiculus mus. Curabitur a dictum leo. Etiam lobortis est
+            lacus, luctus blandit nunc posuere non. Quisque dignissim varius
+            ultricies. Pellentesque auctor auctor leo. Aliquam id augue non
+            mauris ullamcorper ultrices. Vestibulum vestibulum, magna nec
+            tincidunt vulputate, ex lectus vehicula quam, non sagittis urna
+            libero sit amet quam. Ut consequat, leo ut iaculis feugiat, urna mi
+            mollis magna, sit amet varius dui massa sed metus. Nulla sit amet
+            sem est. Quisque a ante risus. Quisque pulvinar, mauris in lobortis
+            egestas, lacus justo egestas nisi, quis egestas ipsum elit sed
+            lacus. Aliquam eget venenatis mi, id dignissim justo. Nullam mi dui,
+            pulvinar quis dictum sed, lobortis a justo. Morbi sed nulla vitae
+            urna malesuada malesuada.
           </p>
           <p>
             Orci varius natoque penatibus et magnis dis parturient montes,
