@@ -7,7 +7,7 @@ import '../index.css';
 import kslogo from '../ks-logo.png';
 
 class Header extends Component {
-  renderContent() {
+  render() {
     // switch (this.props.auth) {
     //   case null:
     //     return;
@@ -37,46 +37,44 @@ class Header extends Component {
     //     );
     //   default:
     return (
-      <div id="header">
-        <nav className="navbar pb-0 pt-0 pr-0 pl-2 sticky-top navbar-dark bg-dark border-bottom border-light">
-          <div>
-            <Link
-              to="/"
-              className="navbar-brand"
-              style={{
-                fontFamily: "'Orbitron', sans-serif"
-              }}
-            >
-              <img style={{ paddingRight: '5px' }} alt="logo" src={kslogo} />
-              Kreative Sparks Photography
-            </Link>
-            <Link
-              to="/gallery"
-              className="btn font-weight-bold btn-outline-light border-dark"
-              style={{ fontFamily: "'Orbitron', sans-serif" }}
-            >
-              Gallery
-            </Link>
-            {/* <Link to="/about" className="no-underline navbar-button">
+      <nav className="navbar pb-1 pt-0 pr-0 pl-2 sticky-top navbar-dark bg-dark border-bottom border-light">
+        <div>
+          <Link
+            to="/"
+            className="navbar-brand"
+            style={{
+              fontFamily: "'Orbitron', sans-serif"
+            }}
+          >
+            <img style={{ paddingRight: '5px' }} alt="logo" src={kslogo} />
+            Kreative Sparks Photography
+          </Link>
+          <Link
+            to="/gallery"
+            className="btn font-weight-bold btn-outline-light border-dark"
+            style={{ fontFamily: "'Orbitron', sans-serif" }}
+          >
+            Gallery
+          </Link>
+          {/* <Link to="/about" className="no-underline navbar-button">
                   About Us
                 </Link> */}
-            <Link
-              to="/contact"
-              className="btn font-weight-bold btn-outline-light border-dark"
-              style={{ fontFamily: "'Orbitron', sans-serif" }}
-            >
-              Contact Us!
-            </Link>
-          </div>
-        </nav>
-      </div>
+          <Link
+            to="/contact"
+            className="btn font-weight-bold btn-outline-light border-dark"
+            style={{ fontFamily: "'Orbitron', sans-serif" }}
+          >
+            Contact Us!
+          </Link>
+        </div>
+      </nav>
     );
     //}
   }
 
-  render() {
-    return <div>{this.renderContent()}</div>;
-  }
+  // render() {
+  //   return <div>{this.renderContent()}</div>;
+  // }
 }
 
 // function mapStateToProps({ auth }) {

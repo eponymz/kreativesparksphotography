@@ -4,7 +4,7 @@ import React, { Component } from 'react';
 import '../index.css';
 
 class Footer extends Component {
-  renderContent() {
+  render() {
     // switch (this.props.auth) {
     //   case null:
     //     return;
@@ -33,9 +33,9 @@ class Footer extends Component {
     // }
   }
 
-  render() {
-    return <div>{this.renderContent()}</div>;
-  }
+  // render() {
+  //   return <div>{this.renderContent()}</div>;
+  // }
 }
 
 // function mapStateToProps({ auth }) {
