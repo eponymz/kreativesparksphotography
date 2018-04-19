@@ -7,6 +7,8 @@ import Footer from './Footer';
 import AboutUs from './About';
 import Header from './Header';
 import '../index.css';
+import Contact from './Contact';
+//import Samples from './Gallery';
 
 // const Header = () => <h2>HEADER</h2>; const Dashboard = () =>
 // <h2>DASHBOARD</h2>; const SurveyNew = () => <h2>SURVEY CREATE</h2>; const
@@ -28,6 +30,8 @@ class App extends Component {
           {/* <Route exact path="/" component={Login} /> */}
           <Route path="/" component={Header} />
           <Route exact path="/" component={AboutUs} />
+          {/* <Route exact path="/gallery" component={Samples} /> */}
+          <Route exact path="/contact" component={Contact} />
           <Route path="/" component={Footer} />
         </div>
       </BrowserRouter>

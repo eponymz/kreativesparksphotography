@@ -51,7 +51,7 @@ class Header extends Component {
           </Link>
           <Link
             to="/gallery"
-            className="btn font-weight-bold btn-outline-light border-dark"
+            className="btn btn-sm font-weight-bold btn-outline-light border-light p-sm-1 mr-sm-1"
             style={{ fontFamily: "'Orbitron', sans-serif" }}
           >
             Gallery
@@ -61,7 +61,7 @@ class Header extends Component {
                 </Link> */}
           <Link
             to="/contact"
-            className="btn font-weight-bold btn-outline-light border-dark"
+            className="btn btn-sm font-weight-bold btn-outline-light border-light p-sm-1"
             style={{ fontFamily: "'Orbitron', sans-serif" }}
           >
             Contact Us!
