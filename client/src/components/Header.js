@@ -6,6 +6,7 @@ import { Link } from 'react-router-dom';
 import '../index.css';
 import kslogo from '../ks-logo.png';
 
+
 class Header extends Component {
   render() {
     // switch (this.props.auth) {
