@@ -25,7 +25,7 @@ class Footer extends Component {
           >
             ©2018 | Kreative Sparks Photography - All rights reserved to content
             <br />
-            ©2018 | Ian Sabey and David Neilson - Web design
+            ©2018 | Ian Sabey - Web development and design
           </div>
         </footer>
       </div>
