@@ -8,6 +8,9 @@
     },
     "/api/*": {
       "target": "http://localhost:5000"
+    },
+    "/contact/send": {
+      "target": "http://localhost:5000"
     }
   },
   "dependencies": {

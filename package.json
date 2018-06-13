@@ -12,8 +12,7 @@
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild":
-      "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
   },
   "author": "Ian Sabey",
   "license": "ISC",
@@ -23,6 +22,7 @@
     "express": "^4.16.3",
     "mongodb": "^3.0.6",
     "mongoose": "^5.0.14",
+    "nodemailer": "^4.6.6",
     "nodemon": "^1.17.3",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0"

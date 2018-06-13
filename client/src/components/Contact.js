@@ -31,28 +31,31 @@ class Contact extends Component {
           </p>
           <div className="row">
             <div className="col-md-8 col-md-offset-2 m-auto w-50">
-              <form className="form-horizontal">
+              <form className="form-horizontal" method="POST" action="/contact/send">
                 <div className="form-group">
                   <label>Name</label>
                   <input
+                    name="name"
                     type="text"
                     className="form-control"
-                    placeholder="Jane Doe"
+                    placeholder="Enter Name"
                   />
                 </div>
                 <div className="form-group">
                   <label>Email</label>
                   <input
+                    name="email"
                     type="email"
                     className="form-control"
-                    placeholder="jane.doe@example.com"
+                    placeholder="Enter Email"
                   />
                 </div>
                 <div className="form-group ">
                   <label>Your Message</label>
                   <textarea
+                    name="message"
                     className="form-control"
-                    placeholder="Description"
+                    placeholder="Enter Message"
                     defaultValue={''}
                   />
                 </div>
