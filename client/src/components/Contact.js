@@ -68,7 +68,7 @@ class Contact extends Component {
                 </button>
               </form>
               <hr />
-              <h3
+              {/* <h3
                 style={{
                   textAlign: 'center',
                   color: 'lightgray',
@@ -102,7 +102,7 @@ class Contact extends Component {
                     </i>
                   </a>
                 </li>
-              </ul>
+              </ul> */}
             </div>
           </div>
         </div>
