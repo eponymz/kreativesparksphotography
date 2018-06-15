@@ -6,7 +6,7 @@ module.exports = app => {
   app.use(bodyParser.json());
   app.use(bodyParser.urlencoded({ extended: false }));
 
-  app.post('/contact/send', function (req, res) {
+  app.post('/contact/send', (req, res) => {
     const transporter = nodeMailer.createTransport({
       service: 'Gmail',
       auth: {
@@ -23,7 +23,7 @@ module.exports = app => {
       html: '<p>Someone has reached out for information! Here is their details!</p><ul><li>Name: ' + req.body.name + '</li><li>Email: ' + req.body.email + '</li><li>Inquiry Message: ' + req.body.message + '</li>'
     }
 
-    transporter.sendMail(mailOptions, function (error, info) {
+    transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.log(error);
         res.redirect('/')
