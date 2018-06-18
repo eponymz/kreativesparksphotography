@@ -26,7 +26,7 @@ module.exports = app => {
     transporter.sendMail(mailOptions, (error, info) => {
       if (error) {
         console.log(error);
-        res.redirect('/')
+        res.redirect('/contact')
       } else {
         console.log('Message Sent: ' + info.response);
         res.redirect('/');
