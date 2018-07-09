@@ -1,6 +1,6 @@
 {
   "name": "server",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "engines": {
@@ -12,7 +12,10 @@
     "server": "nodemon index.js",
     "client": "npm run start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\"",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
+    "release": "standard-version",
+    "deploy": "concurrently \"standard-version\" \"npm run push\"",
+    "push": "git push -u --follow-tags origin master"
   },
   "author": "Ian Sabey",
   "license": "ISC",
@@ -30,6 +33,7 @@
     "npm": "^6.1.0",
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
-    "req-flash": "0.0.3"
+    "req-flash": "0.0.3",
+    "standard-version": "^4.4.0"
   }
 }
