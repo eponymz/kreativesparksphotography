@@ -1,17 +1,28 @@
 import React, { Component } from 'react';
 // import { Redirect } from 'react-router-dom';
-// import { connect } from 'react-redux';
+import { connect } from 'react-redux';
 //import { Link } from 'react-router-dom';
 // import Center from 'react-center';
 //import Header from './Header';
+import { Alert } from 'reactstrap';
 import '../index.css';
 
 class AboutUs extends Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      redirect: false
+    }
+  }
+
   render() {
     return (
       <div id="body" className="w-100">
         {/* <Header /> */}
         <div className="bg-secondary border-dark card card-block card-body m-3">
+          {this.state.redirect ? <Alert color="success" id="copySuccess" style={{ textAlign: 'center' }}>Email Sent!</Alert> : null}
           <h1
             style={{
               textAlign: 'center',
@@ -187,10 +198,10 @@ class AboutUs extends Component {
   //   }
 }
 
-// function mapStateToProps({ auth }) {
-//   return { auth };
-// }
+function mapStateToProps({ redirect }) {
+  return { redirect };
+}
 
 // connect(mapStateToProps)()
 
-export default AboutUs;
+export default connect(mapStateToProps)(AboutUs);
